@@ -1,0 +1,200 @@
+/* Main */        
+.main-style {
+    background-color: #86C8BC;
+    color: #174A5B;
+    border: 2px solid #4b956c;
+    border-radius: 10px; 
+}
+
+body {
+    background-color: #F3F3F4;
+    font-family: Inter;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0px 10px 0px 10px;
+}
+
+nav {
+    display: flex;
+    margin-top: 5px;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #174A5B;
+}
+
+nav a:hover, footer a:hover {
+    color: #F3F3F4;
+    text-shadow: 1px 1px;
+}
+
+footer a {
+    display: inline-flex;
+    text-decoration: none;
+    color: #174A5B;
+}
+
+/* Home Page */
+#welcome-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 5px 0px 5px 0px;
+    padding: 0px 10px 0px 10px;
+}
+
+#welcome-paragraph, #welcome-list {
+    line-height: 40px;
+    font-size: 24px;
+}
+
+@media screen and (min-width: 700px) {
+    #welcome-text {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+        padding: 50px;
+    }
+    #welcome-list {
+        list-style: circle;
+    }
+}
+/* About Me Page */
+.about-me-style {
+    padding: 10px;
+    min-height: 70vh;
+    line-height: 40px;
+    font-size: 24px;
+}
+
+#about-me-content {
+    margin: 5px 0px 5px 0px;
+}  
+
+#education-img {
+    max-width: 250px;
+}
+
+/* Education Page */
+
+/* education page uses about-me-style */
+
+#education-content {
+    margin: 5px 0px 5px 0px;
+}
+
+#about-me-img {
+    max-width: 250px;
+}
+
+/* Documents Page */
+.documents-style {
+    padding: 10px;
+    min-height: 50vh;
+    font-size: 24px;
+}
+
+#sample-work-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+#resume-content {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px 5px 0px;
+}
+
+#resume-preview, #sample-work-preview {
+    width: 300px;
+    border-radius: 10px;
+}
+
+#sample-work-content a, #resume-content a {
+    text-decoration: none;
+    color: #174A5B;
+    border: 2px solid #4b956c;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #F3F3F4;
+    max-width: 240px;
+    margin-bottom: 5px;
+}
+
+#sample-work-content a:hover, #resume-content a:hover {
+    color: black;
+    background-color: #4b956c;
+}
+   
+#sample-work-content img, #resume-content img {
+    max-width: 250px;
+    border: 2px solid #4b956c;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 700px) {
+    .media-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* Contact Me Page */
+.contact-style {
+    min-height: 100vh;
+    font-size: 24px;
+}
+
+#contact-content {
+    margin: 5px 0px 5px 0px;
+}
+
+form, label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+  
+input, textarea {
+    line-height: 30px;
+    width: 90%;
+    border: 2px solid #4b956c;
+    border-radius: 10px;
+}
+  
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    background-color: #F3F3F4;
+    color: #174A5B;
+    border: 2px solid #4b956c;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+button:hover {
+    color: black;
+    background-color: #4b956c;
+}
+
+#disclaimer {
+    font-size: 12px;
+}
